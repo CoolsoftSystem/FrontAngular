@@ -1,0 +1,76 @@
+<div class="bg-white">
+  <div class="relative isolate px-6 pt-14 lg:px-8">
+    <p-tabs value="0">
+      <p-tablist>
+        <p-tab value="0" class="flex items-center !gap-2 text-inherit">
+          <i class="pi pi-list"></i>
+          <span>Inventario</span>
+        </p-tab>
+        <p-tab value="1" class="flex items-center !gap-2 text-inherit">
+          <i class="pi pi-file"></i>
+          <span>Reportes</span>
+        </p-tab>
+        <p-tab value="2" class="flex items-center !gap-2 text-inherit">
+          <i class="pi pi-chart-line"></i>
+          <span>Resumen</span>
+        </p-tab>
+      </p-tablist>
+      <p-tabpanels>
+        <p-tabpanel value="0">
+          <p class="m-0 mt-4 mb-4 text-md">Inventario de los materiales en Stock</p>
+          <app-list />
+        </p-tabpanel>
+        <p-tabpanel value="1">
+          <div class="mt-4 mb-4 text-gray-600 text-lg">
+            <h5 class="font-semibold">Estadísticas clave:</h5>
+            <ul>
+              <li>- Productos con stock crítico (debajo del mínimo).</li>
+              <li>- Rotación de inventario (productos más/menos vendidos).</li>
+              <li>- Histórico de movimientos (entradas/salidas).</li>
+            </ul>
+          </div>
+          <div class="mt-4 mb-4 text-gray-600 text-lg">
+            <h5 class="font-semibold">Visualizaciones:</h5>
+            <ul>
+              <li>- Costo de almacenamiento vs. beneficio.</li>
+              <li>- Gráfico de tendencia de stock (últimos 6 meses).</li>
+              <li>- Heatmap de productos por ubicación.</li>
+            </ul>
+          </div>
+          <p class="m-0">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius
+            modi.
+          </p>
+        </p-tabpanel>
+        <p-tabpanel value="2">
+          <div class="mt-4 mb-4 text-gray-600 text-lg">
+            <h5 class="font-semibold">Métricas principales:</h5>
+            <ul>
+              <li>- Tasa de rotación (veces que se renueva el stock en un periodo).</li>
+              <li>- Días de inventario (cuánto dura el stock actual).</li>
+              <li>- % de productos obsoletos o sin movimiento.</li>
+              <li>- Costo de almacenamiento vs. beneficio.</li>
+            </ul>
+          </div>
+          <div class="mt-4 mb-4 text-gray-600 text-lg">
+            <h5 class="font-semibold">Alertas:</h5>
+            <ul>
+              <li>- Productos próximos a caducar.</li>
+              <li>- Pérdidas por stock no vendido.</li>
+            </ul>
+          </div>
+          <p class="m-0">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+            sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+            facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+            impedit quo minus.
+          </p>
+        </p-tabpanel>
+      </p-tabpanels>
+    </p-tabs>
+  </div>
+</div>
